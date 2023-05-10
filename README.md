@@ -14,3 +14,25 @@ Use in ImageJ (FIJI) using the .ijm language
 - LinkedIn: Marnie Maddock; Twitter @marniemaddock
 - 10.5.2023
 
+Instructions:
+1. Drag and drop appropriate macro into FIJI
+2. Click Run
+3. Select Folder where your .TIF files are stored. NOTE, if you have .lif files, these will need to be saved as individual tifs. Follow instructions on: https://github.com/MarnieMaddock/SaveAllTif
+4. Open one image and note down which channel corresponds to nuclei, live cells, dead cells etc.
+5. For these macros, it is set up for:
+- Channel 1 = Nuclei stain
+- Channel 2 = Live stain
+- Channel 3 = Dead stain
+6. If your images are in a different order, for example, your dead stain is channel 1 not 3
+- Change code: 
+`selectWindow("C3-" + title);`
+To
+`selectWindow("C1-" + title);`
+7. Press Run
+8. Select the folder where your TIF images are saved
+9. A new folder called dead/nuclei/live_results will be created inside the input directory. Select this as your destination directory.
+10. Select your threshold. A duplicate of the original photo is present to help choose your threshold. If the threshold is not adequate, for example the image is out of focus, you may delete slices that hinder accuracte results.
+11. Press Apply 
+12. Press OK
+13. Counts will be saved to the selcted folder
+14. Repeat for the other macros.
