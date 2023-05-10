@@ -4,7 +4,8 @@
 
 
 Use in ImageJ (FIJI) using the .ijm language
-- This macro counts dead cells from fluorescence microscopy. This macro assumes that channel 3 is the dead cells channel. Please change this if it is in a different channel.
+- This macro counts live cells, dead cells and nuclei from fluorescence microscopy (usually has been stained with Calcein-AM, Propidium Iodide and hoechst 33342). 
+- This macro assumes that channel 3 is the dead cells channel. Please change this if it is in a different channel.
 - Created by Marnie L. Maddock; 
 - University of Wollongong, Australia;
 - School of Medical, Indigenous and Health Sciences
